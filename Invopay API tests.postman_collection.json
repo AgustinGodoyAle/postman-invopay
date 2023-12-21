@@ -1,0 +1,892 @@
+{
+	"info": {
+		"_postman_id": "be3e2a30-7fe4-44cf-8c12-28a159280671",
+		"name": "Invopay API tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29941385"
+	},
+	"item": [
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "total-overdue",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiRU5URVJQUklTRV9NQU5BR0VSIiwiVXNlckludm9wYXkiOjEsInN1YiI6Im9saXZhaW1hbm9sZWR1YXJkb0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwNzg5NzUsImV4cCI6MTcwMzE2NTM3NX0.CMdjaGCJ1Wsr3f5tnVFhZsgvsPTqema1b793ibXtoJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/invoices/total-overdue",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"invoices",
+								"total-overdue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "total-peding",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiRU5URVJQUklTRV9NQU5BR0VSIiwiVXNlckludm9wYXkiOjEsInN1YiI6Im9saXZhaW1hbm9sZWR1YXJkb0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwNzg5NzUsImV4cCI6MTcwMzE2NTM3NX0.CMdjaGCJ1Wsr3f5tnVFhZsgvsPTqema1b793ibXtoJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/invoices/total-pending",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"invoices",
+								"total-pending"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invoices-payments",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiRU5URVJQUklTRV9NQU5BR0VSIiwiVXNlckludm9wYXkiOjEsInN1YiI6Im9saXZhaW1hbm9sZWR1YXJkb0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwNzg5NzUsImV4cCI6MTcwMzE2NTM3NX0.CMdjaGCJ1Wsr3f5tnVFhZsgvsPTqema1b793ibXtoJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/invoices/invoice-payments",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"invoices",
+								"invoice-payments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remaining-payments",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiRU5URVJQUklTRV9NQU5BR0VSIiwiVXNlckludm9wYXkiOjEsInN1YiI6Im9saXZhaW1hbm9sZWR1YXJkb0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwNzg5NzUsImV4cCI6MTcwMzE2NTM3NX0.CMdjaGCJ1Wsr3f5tnVFhZsgvsPTqema1b793ibXtoJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/invoices/remaining-payments",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"invoices",
+								"remaining-payments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "performance-metrics",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiRU5URVJQUklTRV9NQU5BR0VSIiwiVXNlckludm9wYXkiOjEsInN1YiI6Im9saXZhaW1hbm9sZWR1YXJkb0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwNzg5NzUsImV4cCI6MTcwMzE2NTM3NX0.CMdjaGCJ1Wsr3f5tnVFhZsgvsPTqema1b793ibXtoJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/invoices/performance-metrics?metricType=MONTHLY&filterDate=2023-12-01",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"invoices",
+								"performance-metrics"
+							],
+							"query": [
+								{
+									"key": "metricType",
+									"value": "MONTHLY"
+								},
+								{
+									"key": "filterDate",
+									"value": "2023-12-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "flow-statuses",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiRU5URVJQUklTRV9NQU5BR0VSIiwiVXNlckludm9wYXkiOjEsInN1YiI6Im9saXZhaW1hbm9sZWR1YXJkb0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwNzg5NzUsImV4cCI6MTcwMzE2NTM3NX0.CMdjaGCJ1Wsr3f5tnVFhZsgvsPTqema1b793ibXtoJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/flow-statuses",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"flow-statuses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ultimos 30 días table",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiRU5URVJQUklTRV9NQU5BR0VSIiwiVXNlckludm9wYXkiOjEsInN1YiI6Im9saXZhaW1hbm9sZWR1YXJkb0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwNzg5NzUsImV4cCI6MTcwMzE2NTM3NX0.CMdjaGCJ1Wsr3f5tnVFhZsgvsPTqema1b793ibXtoJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/invoices?sort=,asc&page=0&size=10&createDateFrom=2023-11-20T17:57:36&createDateTo=2023-12-20T17:57:36",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"invoices"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": ",asc"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "createDateFrom",
+									"value": "2023-11-20T17:57:36"
+								},
+								{
+									"key": "createDateTo",
+									"value": "2023-12-20T17:57:36"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Enterprises",
+			"item": [
+				{
+					"name": "brings all enterprises",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/enterprises",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"enterprises"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "brings all subsidiary enterprise",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiRU5URVJQUklTRV9NQU5BR0VSIiwiVXNlckludm9wYXkiOjEsInN1YiI6Im9saXZhaW1hbm9sZWR1YXJkb0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwNzg5NzUsImV4cCI6MTcwMzE2NTM3NX0.CMdjaGCJ1Wsr3f5tnVFhZsgvsPTqema1b793ibXtoJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/enterprises/subsidiaries?page=0&size=20&sort=,asc",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"enterprises",
+								"subsidiaries"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								},
+								{
+									"key": "sort",
+									"value": ",asc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Suppliers",
+			"item": [
+				{
+					"name": "find supplier by id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200: validar que la respuesta sea 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/suppliers/12",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"suppliers",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bring pagination of all supplier",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200: validar que la respuesta sea 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiRU5URVJQUklTRV9NQU5BR0VSIiwiVXNlckludm9wYXkiOjEsInN1YiI6Im9saXZhaW1hbm9sZWR1YXJkb0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwNzg5NzUsImV4cCI6MTcwMzE2NTM3NX0.CMdjaGCJ1Wsr3f5tnVFhZsgvsPTqema1b793ibXtoJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/suppliers?sort=,asc&page=0&size=20&typeStatus=()=>!0&bussinessName=",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"suppliers"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": ",asc"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								},
+								{
+									"key": "typeStatus",
+									"value": "()=>!0"
+								},
+								{
+									"key": "bussinessName",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Log in users",
+			"item": [
+				{
+					"name": "login to invopay (enterprise_manager))",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200: validar que la respuesta sea 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"olivaimanoleduardo@gmail.com\",\r\n  \"password\": \"aLvgzlC0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/users/signIn?email=olivaimanoleduardo@gmail.com&password=aLvgzlC0",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"users",
+								"signIn"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "olivaimanoleduardo@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "aLvgzlC0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset password email",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200: validar que la respuesta sea 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/users/reset-password-email?email=agustin.usuario.proveedor@yopmail.com",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"users",
+								"reset-password-email"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "agustin.usuario.proveedor@yopmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoices",
+			"item": [
+				{
+					"name": "provide invoice by id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/invoices/49",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"invoices",
+								"49"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bring the pagination of all invoices",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiRU5URVJQUklTRV9NQU5BR0VSIiwiVXNlckludm9wYXkiOjEsInN1YiI6Im9saXZhaW1hbm9sZWR1YXJkb0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwNzg5NzUsImV4cCI6MTcwMzE2NTM3NX0.CMdjaGCJ1Wsr3f5tnVFhZsgvsPTqema1b793ibXtoJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/invoices?page=0&size=20&sort=,asc",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"invoices"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								},
+								{
+									"key": "sort",
+									"value": ",asc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "brings all enterprises employees",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiRU5URVJQUklTRV9NQU5BR0VSIiwiVXNlckludm9wYXkiOjEsInN1YiI6Im9saXZhaW1hbm9sZWR1YXJkb0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwNzg5NzUsImV4cCI6MTcwMzE2NTM3NX0.CMdjaGCJ1Wsr3f5tnVFhZsgvsPTqema1b793ibXtoJs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://techforb-finsuite.rj.r.appspot.com/api/v1/invopay/enterprises/employees?page=0",
+							"protocol": "https",
+							"host": [
+								"techforb-finsuite",
+								"rj",
+								"r",
+								"appspot",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"invopay",
+								"enterprises",
+								"employees"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
